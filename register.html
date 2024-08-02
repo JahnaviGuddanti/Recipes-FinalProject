@@ -1,0 +1,185 @@
+<html>
+    <head>
+        <title>
+            registrationform
+        </title>
+        <style>
+      .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(44, 16, 44);
+    margin-right: 40px;
+}
+
+
+nav ul li:hover {
+    background-color: #a67eb1;
+    color: #213032;
+    cursor:pointer;
+}
+nav ul a {
+    display: inline;
+    color: rgb(46, 6, 46); /* Initial color for navigation links */
+    text-decoration: none;
+    border: 10px;
+    font-size: 18px;
+    margin-right: 20px;
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition */
+}
+
+nav ul a:hover {
+    background-color: #cfa9dc; /* Hover background color */
+    color: #213032; /* Hover text color */
+    cursor: pointer;
+}
+footer {
+    background-color: #d6bbda;
+    padding: 10px 0;
+    color: #6c757d;
+    width: 100%;
+    text-align: center; /* Center the text within the footer */
+}
+
+
+header {
+    background: #d9cae1;
+}
+nav {
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+}
+a{
+    
+    margin-left: 20px;
+    text-align: center;
+    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}   
+body { 
+            background-color: white;
+            margin: 0;
+            padding: 0; }
+            input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 20%;
+            height: 30px; }
+
+            input {
+                border: 2px solid #ddd;
+                border-radius: 10px;
+            margin-bottom: 7px;
+            color: #333; 
+            }
+            input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"],
+        input[type="tel"] {
+            width: 250px; /* Sets a fixed width for input fields */
+            height: 30px;
+        }
+
+        input {
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 7px;
+            color: #333;
+            padding: 5px; /* Adds padding for better text alignment */
+        }
+    .jan {
+    display: flex;
+    
+    align-items: center; /* Centers the elements horizontally */
+    margin-top: 20px; /* Adds some space from the top */
+}
+.jan form {
+    display: flex;
+    
+    align-items: center; /* Centers form elements horizontally */
+}
+            .dish img {
+    float: left; /* Aligns the image to the left */
+    width: 390px; /* Adjust the width as needed */
+    height: 300px; /* Maintains the aspect ratio */
+    margin-right: 10px; /* Adds space to the right of the image */
+    border-radius: 5px; /* Optional: adds rounded corners */
+}
+.dish2 img {
+    position: absolute;
+    right: 0; /* Aligns the image to the right */
+    top: 50%; /* Positions the image vertically in the middle */
+   
+    width: 400px; /* Adjust the width as needed */
+    height: 300px; /* Maintains the aspect ratio */
+    border-radius: 5px; /* Optional: adds rounded corners */
+}
+
+           
+            
+        </style>
+    
+</html>
+ </head>
+<header>
+    <div class ="logo">Flavor Fiesta</div>
+  <center><nav>
+    <ul>
+       <a href="home.html">HOME</a>
+       <a href="recipe.html">RECIPES</a>
+       <a href="about.html">ABOUT</a>
+       <a href="contact.html">CONTACT</a>
+       <a href="register.html">REGISTER</a>
+       <a href="login.html">LOGIN</a>
+    </ul>
+   </nav></center>
+   </div>
+    </header>
+
+
+
+<div class="dish">
+    <img src="woman.webp">   
+</div>
+<div class="dish2">
+    <img src="2woman.webp">   
+</div>
+<div class="jan">
+<div><h2>REGISTRATION FORM</h2><br>
+    USERNAME :    <input type="text" name="username" placeholder="enter username"><br>
+    CREATE PASSWORD : <input type="password" name="pass" placeholder="enter password"><br>
+                       <input type="submit"><br>
+    <br>NAME:  <input type="text" name="username" placeholder="enter name"><br>
+    AGE : <input type="number" name="dozens" min="0" max="25" step="1" value="1">
+    <form action="/">
+        Date of Birth :
+        <input type="date" name="Bname">
+    </form>
+   
+    </Select>
+    <h4>GENDER</h4>
+    <input type="radio" name="gender" value="f">female<br>
+    <input type="radio" name="gender" value="m">male<br>
+    <input type="radio" name="gender" value="o">others<br>
+
+    <br> <form action="/">
+        Email:
+        <input type="email" name="office" id="myofficeid"><br>
+        <input type="submit">
+    </form>
+
+   <br> <form action="/">
+        Your Mobile No :
+        <input type="tel" name="personal"
+        id="peral" pattern="[0-9]{10}" title="The ten digit number"><br>
+        <input type="submit">
+    </form>
+    
+</div>
+</div>
+<footer>
+    <p>&copy; 2024 Flavor Fiesta. All rights reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flavor Fiesta Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        function loginvalidation() {
+            var uname = document.forms["myform"]["email"].value;
+            var password = document.forms["myform"]["password"].value;
+            
+            if (uname == null || uname == "") {
+                alert("Name can't be blank");
+                return false;
+            } else if (password.length < 6) {
+                alert("Password must be at least 6 characters");
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url("log3.jpg");
+            background-size: cover;
+            background-position: right;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+            background: #d9cae1;
+        }
+        .container {
+            color: #213032;
+            width: 50%;
+            margin: 50px auto;
+            padding: 30px;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        label {
+            margin-bottom: 5px;
+            color: #333;
+        }
+        input {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+        input[type="text"],
+        input[type="password"] {
+            height: 20px;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            background-color: #213032;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #97a2a3;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: rgb(44, 16, 44);
+            margin-right: 40px;
+            float: left;
+        }
+        nav ul li:hover {
+            background-color: #a67eb1;
+            color: #213032;
+            cursor: pointer;
+        }
+        nav ul a {
+            display: inline;
+            color: rgb(46, 6, 46);
+            text-decoration: none;
+            border: 10px;
+            font-size: 18px;
+            margin-right: 20px;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        nav ul a:hover {
+            background-color: #cfa9dc;
+            color: #213032;
+            cursor: pointer;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+        }
+        a {
+            margin-left: 20px;
+            text-align: center;
+            font-style: italic;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            color: #6c757d;
+        }
+        .log {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Flavor Fiesta</div>
+        <center>
+            <nav>
+                <ul>
+                    <a href="home.html">HOME</a>
+                    <a href="recipe.html">RECIPES</a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="contact.html">CONTACT</a>
+                    <a href="register.html">REGISTER</a>
+                    <a href="login.html">LOGIN</a>
+                </ul>
+            </nav>
+        </center>
+    </header>
+    
+    <div class="log">
+        <font size=10>Login</font>
+    </div>
+    
+    <div class="container">
+        <h2>Welcome Back</h2>
+        <form name="myform" onsubmit="return loginvalidation()" action="loginsuccess.html">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>

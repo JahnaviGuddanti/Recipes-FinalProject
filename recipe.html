@@ -1,0 +1,198 @@
+<html lang="en">
+<head>
+   
+    <title>Food Website</title>
+    <style>
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(44, 16, 44);
+    margin-right: 40px;
+}
+
+
+nav ul li:hover {
+    background-color: #a67eb1;
+    color: #213032;
+    cursor:pointer;
+}
+nav ul a {
+    list-style: none; /* Removes bullet points */
+    padding: 7.5px; /* Removes padding */
+    margin: 0; /* Removes margin */
+    display: flex; /* Aligns items horizontally */
+    justify-content: flex-end; /* Aligns items to the right */
+    display: inline;
+    color: rgb(46, 6, 46); /* Initial color for navigation links */
+    text-decoration: none;
+    border: 10px;
+    font-size: 18px;
+    margin-right: 20px;
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition */
+}
+
+nav ul a:hover {
+    background-color: #cfa9dc; /* Hover background color */
+    color: #213032; /* Hover text color */
+    cursor: pointer;
+}
+
+
+header {
+    background: #d9cae1;
+}
+nav {
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+}
+a{
+    
+    margin-left: 20px;
+    text-align: center;
+    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.dish {
+    color: #333;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    /*overflow: hidden;*/
+    text-align: center;
+    background: #cfc8c8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.dish img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.dish a {
+    display: block;
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.dish {
+    margin-right: 20px; /* Adjust the gap between .dish and .jan */
+}
+.dish2 {
+    color: #333;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    background: #cfc8c8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+.dish2 img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.dish2 ,a {
+
+    display: block;
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+}
+.dish, .dish2,.dish3,.dish4{
+    display: inline-block;
+    vertical-align: top;
+     /* Adjust width as needed */
+    margin-right: 50px;
+}
+.dish3 , .dish4,.dish5{ /*color AROUND recipe name and image*/
+    color: #333;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    background: #cfc8c8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+.dish3 img , .dish4 img, .dish5 img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.dish5{
+    display: inline-block;
+    vertical-align: top;
+     /* Adjust width as needed */
+    margin-right: 50px;
+}
+.dish5 {
+        margin-left: 50px; /*Gap btw prawns and egg curry */
+    }
+    footer {
+    background-color: #d9cae1; /* Matches the header background color */
+    padding: 20px 0;
+    text-align: center;
+    color: #333; /* Darker text color for contrast */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+       
+    </style>
+</head>
+<header>
+    <div class ="logo">Flavor Fiesta</div>
+  <center><nav>
+    <ul>
+       <a href="home.html">HOME</a>
+       <a href="recipe.html">RECIPES</a> 
+       <a href="about.html">ABOUT</a>
+       <a href="contact.html">CONTACT</a>
+       <a href="register.html">REGISTER</a>
+       <a href="login.html">LOGIN</a>
+    </ul>
+   </nav></center>
+   </div>
+    </header>
+      <center><font size=6><em>Unlock the secrets of flavor – go explore the recipes!</em></font></center>
+      <div class="section">
+        <h2>Non-Veg Recipes</h2>
+        <div class="dish">
+            <a href="chickenfry.html"><br>Chicken Fry</a> 
+            <img src="chick.webp">   
+        </div>
+        <div class="dish3">
+            <a href="prawns.html"><br>Prawns Fry</a> 
+            <img src="prawn.jpg">   
+        </div>
+        <div class="dish5">
+            <a href="eggcurry.html"><br>Egg Curry</a> 
+            <img src="egg.jpg">   
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Veg Recipes</h2>
+        <div class="dish2">
+            <a href="sambar.html"><br>Sambar</a> 
+            <img src="samb.avif">   
+        </div>
+        <div class="dish4">
+            <a href="mushroom.html"><br>Spicy Mushroom Biryani</a> 
+            <img src="mush.webp">   
+        </div>
+        <footer>
+            <p>&copy; 2024 My flavorfiesta. All rights reserved.</p>
+        </footer>
+</body>
+</html>

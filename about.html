@@ -1,0 +1,203 @@
+<html lang="en">
+<head>
+   
+    <title>Food Website</title>
+    <style>
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(44, 16, 44);
+    margin-right: 40px;
+}
+
+
+nav ul li:hover {
+    background-color: #a67eb1;
+    color: #213032;
+    cursor:pointer;
+}
+nav ul a {
+    display: inline;
+    color: rgb(46, 6, 46); /* Initial color for navigation links */
+    text-decoration: none;
+    border: 10px;
+    font-size: 18px;
+    margin-right: 20px;
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition */
+}
+
+nav ul a:hover {
+    background-color: #cfa9dc; /* Hover background color */
+    color: #213032; /* Hover text color */
+    cursor: pointer;
+}
+
+
+header {
+    background: #d9cae1;
+}
+nav {
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+}
+a{
+    
+    margin-left: 20px;
+    text-align: center;
+    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer {
+    background-color: #ddc4da;
+    padding: 10px 0;
+    color: #323435; }
+    .about {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    
+}
+
+.about-intro {
+    max-width: 600px;
+    background-color: #e9e2de;
+    font-size: 16px;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    color: rgb(0, 0, 0);
+
+}
+
+
+.about-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.about-intro p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.mission, .what-we-offer {
+    max-width: 560px;
+    background-color:#e9e2de;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.mission h2, .what-we-offer h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.mission p, .what-we-offer ul {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.what-we-offer ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
+.sidebar {
+    max-width: 300px; /* Width of the sidebar */
+    background-color: #f8f9fa; /* Background color of the sidebar */
+    border: 1px solid #ddd; /* Border around the sidebar */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    padding: 20px; /* Padding inside the sidebar */
+    position: fixed; /* Fixes the sidebar to the right side of the page */
+    right: 20px; /* Distance from the right edge */
+    top: 100px; /* Distance from the top */
+}
+
+.sidebar h2 {
+    font-size: 1.5rem; /* Font size for the heading */
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+.sidebar p {
+    font-size: 1rem; /* Font size for the text */
+    line-height: 1.5; /* Line height for better readability */
+    color: #333; /* Text color */
+}
+
+.sidebar .btn-primary {
+    background-color: #d1bdd9; /* Button background color */
+    border-color: #8d8188; /* Button border color */
+    padding: 10px 20px; /* Button padding */
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: bold; /* Bold text */
+    color: #213032; /* Text color */
+}
+
+.sidebar .btn-primary:hover {
+    background-color: #ad9ea7; /* Button hover background color */
+    border-color: #e4c5dc; /* Button hover border color */
+}
+body {
+background-image: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.9)), url("ab2.jpg");
+    background-size: cover; }
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">Flavor Fiesta</div>
+        <center>
+            <nav>
+                <ul>
+                    <a href="home.html">HOME</a>
+                    <a href="recipe.html">RECIPES</a> 
+                    <a href="about.html">ABOUT</a>
+                    <a href="contact.html">CONTACT</a>
+                    <a href="register.html">REGISTER</a>
+                    <a href="login.html">LOGIN</a>
+                </ul>
+            </nav>
+        </center>
+    </header>
+    
+    <div class="about">
+        <section class ="about-intro">
+            <h1>Welcome to Flavor Fiesta</h1>
+            <p style="color: rgb(23, 21, 21)";> our Flavor Fiesta, we are passionate about cooking and dedicated to bringing you culinary inspiration that celebrates flavors and creativity.</p>
+            <p style="color: rgb(16, 15, 15)";> Whether you're a seasoned chef or a beginner in the kitchen, our goal is to provide you with a diverse collection of delicious recipes that are easy to follow and sure to impress.</p>
+        </section>
+
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>Our mission is to make cooking enjoyable and accessible for everyone. We carefully curate each recipe to ensure they are tested, reliable, and full of flavor. From quick weekday dinners to gourmet delights for special occasions, there's something for every taste and skill level.</p>
+        </section>
+
+        <section class="what-we-offer">
+           
+            <h2>What We Offer</h2>
+            <ul>
+                <li><strong>Variety:</strong> Explore a wide range of recipes spanning different cuisines, dietary preferences, and cooking techniques.</li>
+                <li><strong>Quality:</strong> Each recipe is crafted with attention to detail to ensure delicious results every time.</li>
+                <li><strong>Inspiration:</strong> Discover new ideas and tips that will elevate your cooking skills and creativity in the kitchen.</li>
+            </ul>
+        </section>
+        <div class="sidebar">
+            <h2>Our Branches</h2>
+            <p>We have several branches across the city. Visit us at any of our locations to experience our delicious recipes firsthand.</p>
+            <a href="branch.html" class="btn btn-primary">Find a Branch</a>
+        </div>
+        
+    
+    </div>
+   <center> <footer>
+        <p>&copy; 2024 My flavorfiesta. All rights reserved.</p>
+    </footer></center>
+</body>
+</html>

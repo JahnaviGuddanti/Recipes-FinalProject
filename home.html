@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Food Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: rgb(44, 16, 44);
+            margin-right: 40px;
+        }
+
+        nav ul li:hover {
+            background-color: #a67eb1;
+            color: #213032;
+            cursor: pointer;
+        }
+
+        nav ul a {
+            display: inline;
+            color: rgb(46, 6, 46); /* Initial color for navigation links */
+            text-decoration: none;
+            border: 10px;
+            font-size: 18px;
+            margin-right: 20px;
+            transition: color 0.3s, background-color 0.3s; /* Smooth transition */
+        }
+
+        nav ul a:hover {
+            background-color: #cfa9dc; /* Hover background color */
+            color: #213032; /* Hover text color */
+            cursor: pointer;
+        }
+
+        header {
+            background: #d9cae1;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end; /* Aligns items to the right */
+        }
+
+        a {
+            margin-left: 20px;
+            text-align: center;
+            font-style: italic;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        footer {
+    background-color: #d9cae1; /* Matches the header background color */
+    padding: 20px 0;
+    text-align: center;
+    color: #333; /* Darker text color for contrast */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+        .content-box {
+            padding-bottom: 50%;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 3px 4px 8px rgba(70, 68, 68, 0.5);
+            padding: 20px;
+            margin-bottom: 4rem;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .content-box h2 {
+            color: #0e0e0f;
+        }
+
+        .content-box p {
+            color: #2f3032;
+        }
+
+        .btn-primary {
+            background-color: #db87ab;
+            border-color: #8d8188;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #213032;
+        }
+
+        .btn-primary:hover {
+            background-color: #d9bacd;
+            border-color: #e4c5dc;
+        }
+
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("home2.png");
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Flavor Fiesta</div>
+        <center>
+            <nav>
+                <ul>
+                    <a href="home.html">HOME</a>
+                    <a href="recipe.html">RECIPES</a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="contact.html">CONTACT</a>
+                    <a href="register.html">REGISTER</a>
+                    <a href="login.html">LOGIN</a>
+                </ul>
+            </nav>
+        </center>
+    </header>
+    <main class="container mt-5">
+        <div class="content-box">
+            <h2>Discover Delicious Recipes</h2>
+            <p>Explore a variety of gourmet recipes and ingredients designed to elevate your cooking experience. From easy weeknight dinners to elaborate dishes for special occasions, we have something for every palate.</p>
+            <a href="recipe.html" class="btn btn-primary">Browse Recipes</a>
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>&copy; 2024 My flavorfiesta. All rights reserved.</p>
+    </footer>
+</body>
+</html>
